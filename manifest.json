@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+
+  "name": "Gender in Music Hackathon",
+  "description": "This extension will remove all gender pronouns. RIP Prince",
+  "version": "1.0",
+
+  "content_scripts":
+  [
+      {
+          "matches": ["*://*/*"],
+          "js": ["content_script.js"],
+          "runt_at": "document_end"
+      }
+  ]
+}
